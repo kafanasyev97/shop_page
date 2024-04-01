@@ -18,13 +18,13 @@ const HeaderPages = () => {
       <ul className="nav__profile">
         <li>
           <div className="nav__profile-manager">
-            <img src="./public/message.svg" alt="message" />
+            <img src="/message.svg" alt="message" />
             <h6>Ваш менеджер</h6>
           </div>
         </li>
         <li>
           <div className="nav__profile-stocks">
-            <img src="./public/percent.svg" alt="percent" />
+            <img src="/percent.svg" alt="percent" />
             <h6>Акции</h6>
           </div>
         </li>
