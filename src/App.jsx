@@ -9,7 +9,6 @@ function App() {
   const [sum, setSum] = useState(0)
   const [count, setCount] = useState(0)
   const [isCounter, setIsCounter] = useState(false)
-  const [isFavorite, setIsFavorite] = useState(false)
   return (
     <SumContext.Provider
       value={{
@@ -19,8 +18,6 @@ function App() {
         setCount,
         isCounter,
         setIsCounter,
-        isFavorite,
-        setIsFavorite,
       }}
     >
       <Header />

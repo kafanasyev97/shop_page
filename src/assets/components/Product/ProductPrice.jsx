@@ -1,10 +1,11 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import BasketButton from './BasketButton'
 import ProductCounter from './ProductCounter'
 import { SumContext } from '../../../App'
 
 const ProductPrice = () => {
-  const { isCounter, isFavorite, setIsFavorite } = useContext(SumContext)
+  const [isFavorite, setIsFavorite] = useState(false)
+  const { isCounter } = useContext(SumContext)
   const setFavoriteImg = () => setIsFavorite(true)
 
   return (
@@ -26,7 +27,6 @@ const ProductPrice = () => {
           </div>
           <div className="product__info-order-package">
             <input
-              // checked
               className="product__checkbox-input"
               type="checkbox"
               id="toggle"
