@@ -9,9 +9,19 @@ function App() {
   const [sum, setSum] = useState(0)
   const [count, setCount] = useState(0)
   const [isCounter, setIsCounter] = useState(false)
+  const [isFavorite, setIsFavorite] = useState(false)
   return (
     <SumContext.Provider
-      value={{ sum, setSum, count, setCount, isCounter, setIsCounter }}
+      value={{
+        sum,
+        setSum,
+        count,
+        setCount,
+        isCounter,
+        setIsCounter,
+        isFavorite,
+        setIsFavorite,
+      }}
     >
       <Header />
       <Product />
