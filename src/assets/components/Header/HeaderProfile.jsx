@@ -1,4 +1,9 @@
+import { useContext } from 'react'
+import { SumContext } from '../../../App'
+
 const HeaderProfile = () => {
+  const { sum } = useContext(SumContext)
+
   return (
     <div className="head">
       <div className="head__logos">
@@ -25,10 +30,10 @@ const HeaderProfile = () => {
       <div className="head__like">
         <img src="/heart.svg" alt="like" />
       </div>
-      <div className="head__basket">
+      <button className="head__basket">
         <img src="/basket.svg" alt="basket" />
-        <button className="head__basket-button">144 235₽</button>
-      </div>
+        <p className="head__basket-text">{sum + '₽'}</p>
+      </button>
       <div className="head__user">
         <img src="/user.svg" alt="user" />
         <h6 className="head__user-name">Ермаков Е.</h6>

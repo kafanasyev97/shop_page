@@ -139,9 +139,11 @@ p {
   background-color: #f2f6ff;
   border-radius: 8px;
   gap: calc((12 / 1680) * 100vw);
+  width: 148px;
+  justify-content: center;
 }
 
-.head__basket-button {
+.head__basket-text {
   font-family: 'Gotham';
   font-size: 14px;
   font-weight: 700;

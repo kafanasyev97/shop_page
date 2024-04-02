@@ -1,7 +1,11 @@
+import { useContext } from 'react'
 import BasketButton from './BasketButton'
 import ProductCounter from './ProductCounter'
+import { SumContext } from '../../../App'
 
 const ProductPrice = () => {
+  const { isCounter } = useContext(SumContext)
+
   return (
     <div className="product__info-count">
       <div className="product__info-price">
@@ -46,8 +50,7 @@ const ProductPrice = () => {
       </div>
 
       <div className="product__info-amount">
-        {/* <ProductCounter /> */}
-        <BasketButton />
+        {isCounter ? <ProductCounter /> : <BasketButton />}
         <button className="product__info-favorite">
           <img src="/favorite.svg" alt="favorite" />
         </button>
