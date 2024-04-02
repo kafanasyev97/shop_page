@@ -32,9 +32,6 @@ const ProductPrice = () => {
               id="toggle"
             />
             <label htmlFor="toggle" className="product__checkbox-label"></label>
-            {/* <img src="/Toggle.svg" alt="toggle" /> */}
-            {/* <!-- FIX Сделать чекбокс вместо картинки -->
-                      <!-- <div>Toggle</div> --> */}
             <p>Заказ упаковкой</p>
           </div>
         </div>
