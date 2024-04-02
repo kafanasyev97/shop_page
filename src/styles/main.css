@@ -433,6 +433,31 @@ p {
   color: #ffffff;
 }
 
+.product__info-counter {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 284px;
+  border: 2px solid var(--blue-color);
+  border-radius: 8px;
+  padding: 8px 12px 8px 16px;
+}
+
+.product__info-counter input {
+  border: none;
+  width: 184px;
+  height: 40px;
+}
+
+.product__info-counter input::placeholder {
+  font-family: 'Gotham Pro';
+  font-size: 16px;
+  line-height: 24px;
+  color: #071435;
+  font-weight: 700;
+  text-align: center;
+}
+
 .product__info-favorite {
   padding: 16px 24px;
   border-radius: 8px;

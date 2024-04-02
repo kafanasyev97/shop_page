@@ -1,3 +1,6 @@
+import BasketButton from './BasketButton'
+import ProductCounter from './ProductCounter'
+
 const ProductPrice = () => {
   return (
     <div className="product__info-count">
@@ -43,15 +46,8 @@ const ProductPrice = () => {
       </div>
 
       <div className="product__info-amount">
-        {/* <!-- <div className="product__info-amount-text">
-                    <img src="./public/minus.svg" alt="minus" />
-                    <p>24 штуки</p>
-                    <img src="./public/plus.svg" alt="plus" />
-                  </div> --> */}
-        <button className="product__info-basket">
-          <img src="/product-basket.svg" alt="product-basket" />
-          <p>В корзину</p>
-        </button>
+        {/* <ProductCounter /> */}
+        <BasketButton />
         <button className="product__info-favorite">
           <img src="/favorite.svg" alt="favorite" />
         </button>
