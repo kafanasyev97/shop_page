@@ -1,10 +1,15 @@
-import { useContext } from 'react'
+import { useContext, useRef } from 'react'
 import BasketButton from './BasketButton'
 import ProductCounter from './ProductCounter'
 import { SumContext } from '../../../App'
 
 const ProductPrice = () => {
+  const ref = useRef()
   const { isCounter } = useContext(SumContext)
+  const aa = () => {
+    console.log(ref.current)
+    ref.current.setAttribute('fill', 'red')
+  }
 
   return (
     <div className="product__info-count">
@@ -51,8 +56,8 @@ const ProductPrice = () => {
 
       <div className="product__info-amount">
         {isCounter ? <ProductCounter /> : <BasketButton />}
-        <button className="product__info-favorite">
-          <img src="/favorite.svg" alt="favorite" />
+        <button onClick={aa} className="product__info-favorite">
+          <img ref={ref} src="/favorite.svg" alt="favorite" />
         </button>
       </div>
     </div>

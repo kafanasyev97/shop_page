@@ -93,6 +93,20 @@ p {
   border-radius: 8px;
 }
 
+.head__menu:hover {
+  background-color: #316cff;
+}
+
+.head__menu:disabled {
+  background-color: #e9ecf2;
+  color: #b2bace;
+}
+
+.head__menu:disabled.head__menu:hover {
+  background-color: #e9ecf2;
+  color: #b2bace;
+}
+
 .head__menu-button {
   font-family: 'Gotham';
   font-size: 14px;
@@ -109,6 +123,19 @@ p {
   border: 1px solid #e1e5eb;
   border-radius: 8px;
   gap: calc((12 / 1680) * 100vw);
+}
+
+.head__search:hover {
+  border: 1px solid #828ead;
+}
+
+.head__search:focus {
+  border: 2px solid var(--blue-color);
+}
+
+.head__search:disabled {
+  background-color: #f2f5f9;
+  color: #b2bace;
 }
 
 .head__search-input {
@@ -428,6 +455,20 @@ p {
   width: 284px;
 }
 
+.product__info-basket:disabled {
+  background-color: #e9ecf2;
+  color: #b2bace;
+}
+
+.product__info-basket:hover {
+  background-color: #316cff;
+}
+
+.product__info-basket:disabled.product__info-basket:hover {
+  background-color: #e9ecf2;
+  color: #b2bace;
+}
+
 .product__info-basket p {
   font-family: 'Gotham medium';
   font-size: 14px;
@@ -449,6 +490,13 @@ p {
   border: none;
   width: 184px;
   height: 40px;
+  outline: none;
+  font-family: 'Gotham Pro';
+  font-size: 16px;
+  line-height: 24px;
+  color: #071435;
+  font-weight: 700;
+  text-align: center;
 }
 
 .product__info-counter input::placeholder {
