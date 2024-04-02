@@ -25,7 +25,14 @@ const ProductPrice = () => {
             <h6>12 штук в уп.</h6>
           </div>
           <div className="product__info-order-package">
-            <img src="/Toggle.svg" alt="toggle" />
+            <input
+              // checked
+              className="product__checkbox-input"
+              type="checkbox"
+              id="toggle"
+            />
+            <label htmlFor="toggle" className="product__checkbox-label"></label>
+            {/* <img src="/Toggle.svg" alt="toggle" /> */}
             {/* <!-- FIX Сделать чекбокс вместо картинки -->
                       <!-- <div>Toggle</div> --> */}
             <p>Заказ упаковкой</p>
