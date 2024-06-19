@@ -4,22 +4,22 @@
 
 @font-face {
   font-family: 'Gotham';
-  src: url('./fonts/gotham_bold.otf');
+  src: url('/fonts/gotham_bold.otf');
 }
 
 @font-face {
   font-family: 'Gotham medium';
-  src: url('./fonts/gotham_medium.otf');
+  src: url('/fonts/gotham_medium.otf');
 }
 
 @font-face {
   font-family: 'Gotham light';
-  src: url('./fonts/gotham_light.otf');
+  src: url('/fonts/gotham_light.otf');
 }
 
 @font-face {
   font-family: 'Gotham Pro';
-  src: url('./fonts/GothamPro.ttf');
+  src: url('/fonts/GothamPro.ttf');
 }
 
 html {
