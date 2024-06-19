@@ -171,7 +171,7 @@ p {
 }
 
 .head__basket-text {
-  font-family: 'Gotham';
+  font-family: 'Gotham Pro';
   font-size: 14px;
   font-weight: 700;
   background-color: inherit;
@@ -389,7 +389,7 @@ p {
 }
 
 .product__info-amount-package h6 {
-  font-family: 'Gotham';
+  font-family: 'Gotham Pro';
   font-size: 14px;
   line-height: 16px;
   color: #828ead;
